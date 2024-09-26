@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNouvelAppartement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Nouvel Appartement"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Rue : "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNouvelAppartement" />
+
+    <EditText
+        android:id="@+id/editTextRue"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewRue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNouvelAppartement" />
+
+    <TextView
+        android:id="@+id/textViewVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Ville :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRue" />
+
+    <EditText
+        android:id="@+id/editTextVille"
+        android:layout_width="277dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewVille"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRue" />
+
+    <TextView
+        android:id="@+id/textViewCodePostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Code postal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVille" />
+
+    <EditText
+        android:id="@+id/editTextCodePostal"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewCodePostal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVille" />
+
+    <TextView
+        android:id="@+id/textViewEtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Etage"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCodePostal" />
+
+    <EditText
+        android:id="@+id/editTextEtage"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewEtage"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodePostal" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAscenseur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="Ascenseur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEtage" />
+
+    <Button
+        android:id="@+id/buttonCreer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Creer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAscenseur" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

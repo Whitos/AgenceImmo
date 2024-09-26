@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AgenceImmo</string>
+    <string name="app_title">Nouvel Appartement</string>
+    <string name="app_rue">Rue : </string>
+    <string name="app_edit_rue">rue</string>
+    <string name="app_ville">Ville :</string>
+    <string name="app_edit_ville">ville</string>
+    <string name="app_code_postal">Code Postal :</string>
+    <string name="app_edit_code_postal">code postal</string>
+    <string name="app_etage">Etage :</string>
+    <string name="app_edit_etage">etage</string>
+    <string name="app_check_box">Ascenseur</string>
+    <string name="app_creer">Créer</string>
+
+</resources>
